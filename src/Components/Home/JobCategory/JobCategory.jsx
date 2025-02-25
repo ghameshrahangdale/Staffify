@@ -6,7 +6,6 @@ const JobCategory = () => {
   const navigate = useNavigate();
 
   const handleViewMoreClick = (categoryName) => {
-    console.log(`Navigating to JobList for: ${categoryName}`);
     navigate(`/joblist?category=${encodeURIComponent(categoryName)}`);
   };
 
