@@ -15,6 +15,7 @@ import JobDetails from "./Components/Dashboards/Admin/Pages/JobPosts/JobDetails"
 import ContactInfo from "./Components/Home/Contact/ContactInfo";
 import JobDetail from "./Components/Home/LatestJobs/JobDetails";
 import JobList from "./Components/Home/JobCategory/JobList";
+import BrowseLatestJobs from "./Components/Home/LatestJobs/BrowseLatestJobs";
 
 
 function App() {
@@ -45,6 +46,8 @@ function App() {
         <Route path="/joblist" element={<JobList />} />
         <Route path="/browse/:jobId" element={<JobDetail />} />
         <Route path="/contactinfo" element={<ContactInfo />} />{" "}
+        <Route path="/browse-all-jobs" element={<BrowseLatestJobs />} />
+
       </Routes>
     </Router>
   );
